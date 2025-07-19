@@ -1,0 +1,63 @@
+1. Introduction
+• Project Title: House Hunt
+• Team Members:
+  - Sriramappa Gari Bhojaraju(Team Leader)
+  - Thonduru Padma sree
+  - Thonduru Pavani
+  - Vadla Yugendra Achari
+  - V D Mari Basava Raj Gowd
+2. Project Overview
+->Purpose: The House Hunt project aims to simplify the process of finding, listing, and managing rental or sale properties through a user-friendly MERN stack web application.
+->Features: 
+1.Users can search, filter, and view property listings with images and location details.
+2.Admins or owners can add, edit, or delete property listings and manage user inquiries.
+Ask ChatGPT
+-> Architecture:
+• Frontend: Developed using React.js, React Router , Material-UI(MUI), Axios to deliver a responsive and intuitive user experience.
+• Backend: Powered by Node.js and Express.js to manage application logic, authentication, and data flow.
+• Database: MongoDB, JWT Authentication and Multer(for image uploads) is used to store user profiles, appointment records, provider details, and system logs.
+4. Setup Instructions
+• Prerequisites: Node.js, MongoDB, npm.
+• Installation:
+  1. Clone the repository
+  2. Run `npm install` in both `client` and `server` folders
+  3. Configure environment variables in `.env`
+  4. Start frontend and backend servers.
+5. Folder Structure
+• Client (frontend/):
+src/components/ — Reusable React UI components like Navbar, Footer, PropertyCard
+src/pages/ — Page components such as Home, Login, Register, Dashboard, PropertyDetails
+src/context/ — Global state management using React Context (e.g., AuthContext.js)
+src/services/ — Axios API calls (e.g., api.js)
+src/assets/ — Static files like images, logos, or icons
+src/theme.js — Custom Material UI theme configuration
+App.jsx, index.js — Main entry point and router setup
+
+• Server (backend/):
+routes/ — API route files (e.g., authRoutes.js, propertyRoutes.js)
+controllers/ — Route handler logic (e.g., authController.js, propertyController.js)
+models/ — Mongoose schemas for User, Property, Booking
+middleware/ — Middleware like authentication or error handling
+config/ — DB connection, JWT config, cloudinary, or geocoder setup
+server.js — Main backend entry point
+6. Running the Application
+• Frontend: Run `npm start` inside the client directory.
+• Backend: Run `npm start` inside the server directory.
+7. API Documentation
+• Endpoints for registration, login, rental homes listing, , etc. will be documented with methods and sample responses.
+8. Authentication
+• Users authenticate using secure login and JWT tokens. Password reset and role-based access (Admin,User) are implemented.
+9. User Interface
+• The UI is designed for ease-of-use, accessibility, and responsiveness. Core views include login, reantal homes listing, bookings, and reminders.
+10. Testing
+• Testing Scenarios include user registration, admin profile creation, finding rental homes.
+• Tools used: Manual testing, validation via expected vs. actual results.
+11. Screenshots or Demo
+• Screenshots and links to the working demo will be provided here.
+12. Known Issues
+• SMS/email delivery delays under high server load.
+• Mobile responsiveness issues on older devices.
+13. Future Enhancements
+• Implement AI-based home suggestions.
+• Integration with wearable reantal projects.
+• Analytics for providers to monito
